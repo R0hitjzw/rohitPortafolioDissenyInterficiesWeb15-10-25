@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    height: 10vh;
+    width: 100vw;
+}
+
+.headerNav {
+    height: 100%;
+}
+
+.nameDiv {
+    display: flex;
+    justify-self: flex-start;
+    height: 100%;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameHref {
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.nameHref:hover {
+    color: white;
+}
+
+.menuNav {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-start;
+    height: 60%;
+    width: 10%;
+    margin-right: 50px;
+}
+
+.buttonDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+.divNavMenuSections {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    display: none;
+    background-color: yellow;
+    z-index: 100;
+}
+
+.aNavMenu {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.aNavMenu:hover {
+    background-color: red;
+}
+
+.menuNav:hover .divNavMenuSections {
+    display: block;
+}
+
+
+
+#inici {
+    height: 50vh;
+    background-color: aqua;
+}
+
+#projectes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background-color: yellow;
+
+}
+
+#habilitats {
+    height: 100vh;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+#contacte {
+    height: 100vh;
+}
+
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100%;
+}
+
+.benvinguts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400;
+    height: 10vh;
+    font-weight: bolder;
+    color: darkmagenta;
+    min-width: 15px;
+    margin-top: 15px;
+}
+
+.holaNom {
+    border-style: solid;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    column-gap: 7px;
+    width: 20vw;
+}
+
+.hola {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nom {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.desenvolupadorWeb {
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 30vw;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.descripcioPersonal {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-style: solid;
+    width: 90vw;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+
+.projectGallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 90vw;
+    height: 100%;
+    padding: 20px;
+}
+
+.projecteDescripcio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 80%;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: red;
+    border-width: 5px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.projecte
+{
+    display: flex;
+    column-gap: 8px;
+   justify-content: center;
+}
+
+.descripcio {
+    width: 50%;
+}
+
+.projecteDescripcio:first-child
+{
+    height: auto;
+    padding: 15px;
+}
+
+.projecteDescripcio:first-child .descripcio 
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: auto;
+    color: darkblue;
+    font-size: larger;
+}
+
+.projecte:first-child .img1,
+.projecte:first-child .img2,
+.projecte:first-child .img3
+{
+    height:30vh;
+}
+
+
+.project23
+{
+    display: flex;
+    column-gap: 10px;
+    height: auto;
+}
+.projecteDescripcio:nth-child(2)
+{
+    display: flex;
+    flex-direction:row;
+    width: 40vw;
+    height: auto;
+}
+
+.projecteDescripcio:nth-child(2) .img1
+{
+    display: flex;
+    border-style: solid;
+    height: 50vh;
+}
+
+.projecteDescripcio:nth-child(2) .descripcio
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.projecteDescripcio:nth-child(3)
+{
+    display: flex;
+    flex-direction:row;
+    column-gap: 40px;
+    height: auto;
+    width: 40vw;
+}
+
+.projecteDescripcio:nth-child(2)
+{
+    display: flex;
+    flex-direction:column;
+    width: 60vw;
+    height: auto;
+}
+
+.project23 .projecteDescripcio:nth-child(3) .img1
+{
+    display: flex;
+    border-style: solid;
+    height: 50vh;
+}
+
+.project23 .projecteDescripcio:nth-child(2) .descripcio
+{
+    font-weight: bolder;
+}
+
+.habilitatsDiv
+{
+    font-weight: bolder;
+    font-size: x-large;
+    display: flex;
+    justify-self: center;
+}
+
+.frontend
+{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    width: 20vw;
+    margin-top: 15px;
+    border-radius: 12px;
+    padding: 8px;
+    border-style: solid;
+}
+
+.backend
+{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    width: 20vw;
+    margin-top: 25px;
+    border-radius: 12px;
+    padding: 8px;
+    border-style: solid;
+}
+
+.images
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px
+}
+
+.images img
+{
+    height: 20vh;
+}
+
+footer
+{
+    height: 10vh;
+    background-color: red;
+    display: flex;
+} 
+
+
+footer {
+    height: 10vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+footer a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* -------- */
+
+form {
+    background-color: #fff;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #032514;
+    height: 60vh;
+}
+
+#contacte {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    height: 70vh;
+}
+
+/* Form layout */
+#contacte form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+#contacte label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs and textarea */
+#contacte input[type="text"],
+#contacte input[type="email"],
+#contacte textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#contacte button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacte button:hover {
+    background-color: #0056b3;
+}
+
+.contactme
+{
+    display: flex;
+    justify-self: center;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
